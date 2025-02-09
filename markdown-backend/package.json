@@ -1,0 +1,36 @@
+{
+  "name": "markdown-backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+  "dev": "nodemon src/app.ts",
+  "build": "tsc",
+  "start": "node dist/app.js",
+  "clean": "rm -rf dist",
+  "lint": "eslint . --ext .ts",
+  "fix": "eslint . --ext .ts --fix"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "markdown-it": "^14.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "sanitize-html": "^2.14.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
